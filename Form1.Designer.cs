@@ -37,7 +37,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(109, 57);
+            label1.Location = new Point(107, 30);
             label1.Name = "label1";
             label1.Size = new Size(141, 25);
             label1.TabIndex = 0;
@@ -46,7 +46,7 @@
             // button1
             // 
             button1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(123, 139);
+            button1.Location = new Point(122, 93);
             button1.Name = "button1";
             button1.Size = new Size(114, 61);
             button1.TabIndex = 1;
@@ -57,7 +57,7 @@
             // button2
             // 
             button2.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button2.Location = new Point(123, 215);
+            button2.Location = new Point(122, 169);
             button2.Name = "button2";
             button2.Size = new Size(114, 61);
             button2.TabIndex = 2;
@@ -69,7 +69,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(363, 366);
+            ClientSize = new Size(355, 302);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(label1);
