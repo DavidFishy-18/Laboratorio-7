@@ -28,12 +28,89 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "MostrarD";
+            dataGridView1 = new DataGridView();
+            button1 = new Button();
+            button2 = new Button();
+            button3 = new Button();
+            button4 = new Button();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            SuspendLayout();
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(12, 12);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowTemplate.Height = 25;
+            dataGridView1.Size = new Size(534, 330);
+            dataGridView1.TabIndex = 0;
+            // 
+            // button1
+            // 
+            button1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.Location = new Point(21, 392);
+            button1.Name = "button1";
+            button1.Size = new Size(110, 61);
+            button1.TabIndex = 1;
+            button1.Text = "Ordenar Datos";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            button2.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            button2.Location = new Point(156, 392);
+            button2.Name = "button2";
+            button2.Size = new Size(110, 61);
+            button2.TabIndex = 2;
+            button2.Text = "Mostrar cuotas";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // button3
+            // 
+            button3.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            button3.Location = new Point(296, 392);
+            button3.Name = "button3";
+            button3.Size = new Size(110, 61);
+            button3.TabIndex = 3;
+            button3.Text = "Most. Mayor cuota";
+            button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            button4.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            button4.Location = new Point(436, 392);
+            button4.Name = "button4";
+            button4.Size = new Size(110, 61);
+            button4.TabIndex = 4;
+            button4.Text = "Volver";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
+            // 
+            // MostrarD
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(588, 479);
+            Controls.Add(button4);
+            Controls.Add(button3);
+            Controls.Add(button2);
+            Controls.Add(button1);
+            Controls.Add(dataGridView1);
+            Name = "MostrarD";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "MostrarD";
+            Load += MostrarD_Load;
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private DataGridView dataGridView1;
+        private Button button1;
+        private Button button2;
+        private Button button3;
+        private Button button4;
     }
 }
