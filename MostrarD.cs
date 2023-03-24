@@ -97,13 +97,20 @@ namespace Laboratorio__7
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            Hide();
+            Cuotas c = new Cuotas(); c.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             f = f.OrderBy(x => x.Cuota_de_Matenimiento).ToList();
             MessageBox.Show("Datos ordenados exitosamente"); mostD();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            dF d = f.OrderByDescending(xx => xx.Cuota_de_Matenimiento).First();
+            MessageBox.Show("La cuota mas alta de mantenimiento es de: "+d.Nombre+",\npagando Q"+d.Cuota_de_Matenimiento+" al mes");
         }
     }
 }

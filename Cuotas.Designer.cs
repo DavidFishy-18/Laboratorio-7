@@ -43,9 +43,9 @@
             label1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label1.Location = new Point(29, 37);
             label1.Name = "label1";
-            label1.Size = new Size(130, 21);
+            label1.Size = new Size(134, 21);
             label1.TabIndex = 0;
-            label1.Text = "Cuotas mas altas";
+            label1.Text = "Cuotas mas bajas";
             // 
             // label2
             // 
@@ -53,9 +53,9 @@
             label2.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label2.Location = new Point(490, 37);
             label2.Name = "label2";
-            label2.Size = new Size(134, 21);
+            label2.Size = new Size(130, 21);
             label2.TabIndex = 1;
-            label2.Text = "Cuotas mas bajas";
+            label2.Text = "Cuotas mas altas";
             // 
             // dataGridView1
             // 
@@ -98,6 +98,7 @@
             Controls.Add(label1);
             Name = "Cuotas";
             Text = "Cuotas";
+            Load += Cuotas_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
             ResumeLayout(false);
