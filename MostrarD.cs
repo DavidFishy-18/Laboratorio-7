@@ -99,5 +99,11 @@ namespace Laboratorio__7
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            f = f.OrderBy(x => x.Cuota_de_Matenimiento).ToList();
+            MessageBox.Show("Datos ordenados exitosamente"); mostD();
+        }
     }
 }
